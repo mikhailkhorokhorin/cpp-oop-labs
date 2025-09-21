@@ -1,1 +1,1 @@
-# mai-oop-labs
+# C++ OOP labs
