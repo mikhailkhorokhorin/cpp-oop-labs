@@ -6,8 +6,10 @@
             "type": "shell",
             "command": "cmake",
             "args": [
-                "-S", ".",
-                "-B", "build",
+                "-S",
+                ".",
+                "-B",
+                "build",
                 "-DCMAKE_C_COMPILER=gcc-14",
                 "-DCMAKE_CXX_COMPILER=g++-14",
                 "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
@@ -18,9 +20,7 @@
             "label": "CMake Build",
             "type": "shell",
             "command": "cmake",
-            "args": [
-                "--build", "build"
-            ],
+            "args": ["--build", "build"],
             "dependsOn": ["CMake Configure"],
             "group": {
                 "kind": "build",

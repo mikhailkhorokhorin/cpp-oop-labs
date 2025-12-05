@@ -1,5 +1,6 @@
+#include "solution.hpp"
+
 #include <gtest/gtest.h>
-#include "../include/solution.h"
 
 TEST(IsNotVowelTest, LowercaseVowels) {
     EXPECT_FALSE(isNotVowel('a'));
@@ -51,9 +52,4 @@ TEST(RemoveVowelsTest, MixedString) {
 TEST(RemoveVowelsTest, NonAlphabeticCharacters) {
     EXPECT_EQ(removeVowels("123!@#"), "123!@#");
     EXPECT_EQ(removeVowels("a1e2i3o4u5"), "12345");
-}
-
-int main(int argc, char **argv) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
 }

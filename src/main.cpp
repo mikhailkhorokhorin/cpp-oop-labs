@@ -1,5 +1,4 @@
-#include "../include/solution.h"
-#include "iostream"
+#include "solution.hpp"
 
 int main() {
     std::string input;

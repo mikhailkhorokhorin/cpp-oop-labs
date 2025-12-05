@@ -1,4 +1,4 @@
-#include "../include/solution.h"
+#include "solution.hpp"
 
 bool isNotVowel(char c) {
     c = tolower(c);
@@ -8,8 +8,9 @@ bool isNotVowel(char c) {
 std::string removeVowels(std::string s) {
     std::string res = "";
 
-    for (char c : s) {
-        if (isNotVowel(c)) res += c;
-    }
+    for (char c : s)
+        if (isNotVowel(c))
+            res += c;
+
     return res;
 }
